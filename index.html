@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mensaje" class="mensaje">
+        Producto añadido al carrito
+    </div>
+
+    <header  class="header">
+        <div class="menu container">
+            <a href="#" class="logo">StyloBeky</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" >Inicio</a> </li>
+                    <li><a href="#" >Servicios</a> </li>
+                    <li><a href="#" >Productos</a> </li>
+                    <li><a href="#" >Contacto</a> </li>
+                </ul>
+            </nav>
+            <div>
+            <ul>
+                <li class="submenu">
+                    <img src="images/car.png"  id="img-carrito" alt="carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                        <button id="finalizarCompra" onclick="finalizarCompra()">Finalizar compra</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+       
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/taza2.png" alt="">
+
+            </div>
+            <div class="header-txt">
+                <h1>Destacados</h1>
+                <p>Pedi tus tazas personalizadas</p>
+                <a href="#" class="btn-1">informacion</a>
+            </div>
+
+        </div>
+        
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/taza1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Tazas</h3>
+                <a href="#" class="btn-2">informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/remera1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Remeras</h3>
+                <a href="#" class="btn-2">informacion</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/llavero3.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Llaveros</h3>
+                <a href="#" class="btn-2">informacion</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <main class="products container" id="lista-1">
+
+        <h2>Productos</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="images/remera3.png" alt="">
+                <div class="product-txt">
+                    <h3>REMERA blanca para embarazada</h3>
+                    <p>Calidad premiun</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="images/llavero4.png" alt="">
+                <div class="product-txt">
+                    <h3>Llaveros de futbol</h3>
+                    <p>Calidad premiun</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/remera4.png" alt="">
+                <div class="product-txt">
+                    <h3>remera dark black & white</h3>
+                    <p>Calidad premiun</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/llavero1.png" alt="">
+                <div class="product-txt">
+                    <h3>llaveros de souvenir</h3>
+                    <p>Calidad premiun</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/llavero2.png" alt="">
+                <div class="product-txt">
+                    <h3>llaveros dia del amigo</h3>
+                    <p>Calidad premiun</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/remera2.png" alt="">
+                <div class="product-txt">
+                    <h3>remera blanca para niño</h3>
+                    <p>Calidad premiun</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <section class="icons container">
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/icon1.jpg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi alias omnis aliquid illum corrupti expedita magni dolore ducimus harum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum repellendus veniam laudantium similique quaerat aliquid ratione esse, enim ma
+                
+                </p>
+            </div>
+
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/icon1.jpg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi alias omnis aliquid illum corrupti expedita magni dolore ducimus harum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum repellendus veniam laudantium similique quaerat aliquid ratione esse, enim ma
+                
+                </p>
+            </div>
+
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/icon1.jpg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="blog container">
+
+        <div class="blog-1">
+            <img src="images/" alt="">
+            <h3>Blog 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Dicta consequatur ipsam illum qui cupiditate repudiandae! 
+                 Harum aliquam 
+                laudantium ea, obcaecati temporibus facilis similique consequuntur 
+                corrupti nesciunt quas fuga voluptas ullam.
+            </p>
+
+        </div>
+
+        <div class="blog-1">
+            <img src="images/" alt="">
+            <h3>Blog 2</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Dicta consequatur ipsam illum qui cupiditate repudiandae! 
+                 Harum aliquam 
+                laudantium ea, obcaecati temporibus facilis similique consequuntur 
+                corrupti nesciunt quas fuga voluptas ullam.
+            </p>
+            
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link"> 
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
